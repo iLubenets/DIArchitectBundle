@@ -1,0 +1,18 @@
+<?php
+
+namespace Il\DIArchitectBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function diAction($bundle_name)
+    {
+        $pathToJson = $this->container->getParameter('il_di_architect.path_to_save_json');
+        $pathToJson = str_replace('web/', '', $pathToJson);
+        return $this->render(
+            'IlDIArchitectBundle:Charts:code_structure.html.twig',
+            ['path_to_data_json' => "/$pathToJson/$bundle_name.json"]
+        );
+    }
+}

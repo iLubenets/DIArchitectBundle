@@ -1,0 +1,3 @@
+prosto_architect_homepage:
+    pattern:  /architect/di/{bundle_name}
+    defaults: { _controller: IlDIArchitectBundle:Default:di }
