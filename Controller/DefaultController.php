@@ -4,6 +4,7 @@ namespace iLubenets\DIArchitectBundle\Controller;
 
 use iLubenets\DIArchitectBundle\DependencyInjection\Configuration;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
