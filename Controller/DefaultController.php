@@ -12,7 +12,8 @@ class DefaultController extends Controller
         $pathToJson = str_replace('web/', '', $pathToJson);
         return $this->render(
             'iLubenetsDIArchitectBundle:Charts:code_structure.html.twig',
-            ['path_to_data_json' => "/$pathToJson/$bundle_name.json"]
+            ['path_to_data_json' => "/$pathToJson/$bundle_name.json"],
+            new Response(null, Response::HTTP_OK, ['content-type' => 'text/html'])
         );
     }
 }
