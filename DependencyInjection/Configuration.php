@@ -12,13 +12,15 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  */
 class Configuration implements ConfigurationInterface
 {
+    const BUNDLE = 'i_lubenets_di_architect';
+
     /**
      * {@inheritDoc}
      */
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('di_architect');
+        $rootNode = $treeBuilder->root(self::BUNDLE);
         $rootNode
             ->children()
                 ->arrayNode('service_path_list')

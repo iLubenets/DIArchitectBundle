@@ -22,9 +22,9 @@ class iLubenetsDIArchitectExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('di_architect.service_path_list', $config['service_path_list']);
-        $container->setParameter('di_architect.path_to_save_graphviz', $config['path_to_save_graphviz']);
-        $container->setParameter('di_architect.path_to_save_json', $config['path_to_save_json']);
+        $container->setParameter(Configuration::BUNDLE.'.service_path_list', $config['service_path_list']);
+        $container->setParameter(Configuration::BUNDLE.'.path_to_save_graphviz', $config['path_to_save_graphviz']);
+        $container->setParameter(Configuration::BUNDLE.'.path_to_save_json', $config['path_to_save_json']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

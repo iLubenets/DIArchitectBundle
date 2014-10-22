@@ -2,6 +2,7 @@
 
 namespace iLubenets\DIArchitectBundle\Command;
 
+use iLubenets\DIArchitectBundle\DependencyInjection\Configuration;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -56,8 +57,8 @@ class GraphvizGenerateCommand extends ContainerAwareCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->servicePathList = $this->getContainer()->getParameter('di_architect.service_path_list');
-        $this->save_to = $this->getContainer()->getParameter('di_architect.path_to_save_graphviz');
+        $this->servicePathList = $this->getContainer()->getParameter(Configuration::BUNDLE.'.service_path_list');
+        $this->save_to = $this->getContainer()->getParameter(Configuration::BUNDLE.'.path_to_save_graphviz');
 
         $bundleName = $input->getOption('bundle');
         $convertIntoImg = $input->getOption('img');
