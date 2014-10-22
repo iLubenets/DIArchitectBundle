@@ -44,7 +44,7 @@ of datastore you are using.
 
 ``` yaml
 # app/config/config.yml
-il_di_architect:
+di_architect:
   path_to_save_graphviz: 'src/doc/DI'
   service_path_list:
     ListOfYourBundles1: 'src/List/OfYourBundles1/Resources/config/services.yml'
@@ -54,7 +54,7 @@ il_di_architect:
     
 **routing.yml**
 ```
-il_architect:
+di_architect:
     resource: "@iLubenetsDIArchitectBundle/Resources/config/routing.yml"
     prefix: /
 ```
