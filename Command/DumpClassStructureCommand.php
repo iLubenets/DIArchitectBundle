@@ -45,8 +45,8 @@ class DumpClassStructureCommand extends ContainerAwareCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->servicePathList = $this->getContainer()->getParameter('il_di_architect.service_path_list');
-        $this->save_to = $this->getContainer()->getParameter('il_di_architect.path_to_save_json');
+        $this->servicePathList = $this->getContainer()->getParameter('di_architect.service_path_list');
+        $this->save_to = $this->getContainer()->getParameter('di_architect.path_to_save_json');
 
         $bundleName = $input->getOption('bundle');
 
