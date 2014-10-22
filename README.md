@@ -17,7 +17,7 @@ sudo apt-get install graphviz
 Add DIArchitectBundle by running the command:
 
 ``` bash
-$ php composer.phar require ilubenets/diarchitectbundle "dev-master""
+$ php composer.phar require ilubenets/diarchitectbundle "dev-master"
 ```
 
 Composer will install the bundle to your project's `ilubenets/diarchitectbundle` directory.
