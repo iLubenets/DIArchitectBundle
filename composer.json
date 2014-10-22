@@ -1,0 +1,31 @@
+{
+    "name" : "ilubenets/diarchitectbundle",
+    "description" : "Symfony2 bundle for create Dependency Injection charts",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "iLubenets",
+        "email" : "iLubenets@gmail.com"
+    }],
+    "keywords" : [
+        "symfony2 dependency injection charts"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+        "php": ">=5.4.0",
+    },
+    "autoload" : {
+        "psr-0" : {
+            "iLubenets\\DIArchitectBundle" : ""
+        }
+    },
+    "target-dir" : "iLubenets/DIArchitectBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+        "branch-alias" : {
+            "dev-master" : "master"
+        }
+    }
+}
