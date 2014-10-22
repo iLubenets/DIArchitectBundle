@@ -1,6 +1,6 @@
 <?php
 
-namespace Il\DIArchitectBundle\Classes;
+namespace iLubenets\DIArchitectBundle\Classes;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Dumper\Dumper;
@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 
 /**
  * Dump a list of dependencies in a json
- * @package Il\DIArchitectBundle\Classes
+ * @package iLubenets\DIArchitectBundle\Classes
  */
 class JsonDumper extends Dumper
 {

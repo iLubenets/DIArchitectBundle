@@ -1,6 +1,6 @@
 <?php
 
-namespace Il\DIArchitectBundle\Tests\Controller;
+namespace iLubenets\DIArchitectBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

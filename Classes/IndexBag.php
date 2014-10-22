@@ -1,11 +1,11 @@
 <?php
 
-namespace Il\DIArchitectBundle\Classes;
+namespace iLubenets\DIArchitectBundle\Classes;
 
 /**
  * Reference storage
  *
- * @package Il\DIArchitectBundle\Classes
+ * @package iLubenets\DIArchitectBundle\Classes
  */
 class IndexBag
 {

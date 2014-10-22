@@ -1,6 +1,6 @@
 <?php
 
-namespace Il\DIArchitectBundle\Command;
+namespace iLubenets\DIArchitectBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
@@ -16,7 +16,7 @@ use Symfony\Component\Config\FileLocator;
  * Class GraphvizGenerateCommand
  * Idea from the http://fabien.potencier.org/article/16/symfony-service-container-the-need-for-speed
  * You need to create an image http://www.graphviz.org/
- * @package Il\DIArchitectBundle\Command
+ * @package iLubenets\DIArchitectBundle\Command
  */
 class GraphvizGenerateCommand extends ContainerAwareCommand
 {
@@ -39,7 +39,7 @@ class GraphvizGenerateCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('il:di_architect:graphviz_generate')
+            ->setName('di_architect:graphviz_generate')
             ->addOption('bundle', null, InputOption::VALUE_OPTIONAL, 'Bundle name [all|BundleName1,BundleName2,..|system]', null)
             ->addOption('img', null, InputOption::VALUE_NONE, 'Is need to create an image?')
             ->setDescription('Create the Dependency Injection schema in the *.dot format')

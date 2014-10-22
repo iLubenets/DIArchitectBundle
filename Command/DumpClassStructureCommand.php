@@ -1,13 +1,13 @@
 <?php
 
-namespace Il\DIArchitectBundle\Command;
+namespace iLubenets\DIArchitectBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Il\DIArchitectBundle\Classes\JsonDumper;
+use iLubenets\DIArchitectBundle\Classes\JsonDumper;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\Config\FileLocator;
@@ -16,7 +16,7 @@ use Symfony\Component\Config\FileLocator;
  *
  * http://fabien.potencier.org/article/16/symfony-service-container-the-need-for-speed
  *
- * @package Il\DIArchitectBundle\Command
+ * @package iLubenets\DIArchitectBundle\Command
  */
 class DumpClassStructureCommand extends ContainerAwareCommand
 {
@@ -29,7 +29,7 @@ class DumpClassStructureCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-        ->setName('il:di_architect:dump_class_structure')
+        ->setName('di_architect:dump_class_structure')
         ->addOption('bundle', null, InputOption::VALUE_OPTIONAL, 'Bundle name [all|BundleName1,BundleName2,..|system]', null)
         ->setDescription( 'Create the Dependency Injection schema in the *.json format' )
             ->setHelp(

@@ -1,6 +1,6 @@
 <?php
 
-namespace Il\DIArchitectBundle\DependencyInjection;
+namespace iLubenets\DIArchitectBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('il_di_architect');
+        $rootNode = $treeBuilder->root('di_architect');
         $rootNode
             ->children()
                 ->arrayNode('service_path_list')
@@ -31,7 +31,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue('src/doc/DI')
                 ->end()
                 ->scalarNode('path_to_save_json')
-                    ->defaultValue('web/bundles/ildiarchitect/js')
+                    ->defaultValue('web/bundles/ilubenetsdiarchitect/js')
                 ->end()
             ->end();
 
